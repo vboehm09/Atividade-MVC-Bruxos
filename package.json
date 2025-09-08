@@ -1,0 +1,19 @@
+{
+  "name": "mvc-dos-bruxos",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cls && nodemon server.js"
+  },
+  "keywords": ["Bruxos", "Node"],
+  "author": "Boehm",
+  "license": "MIT",
+  "description": "Atividade de MVC bruxos",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
