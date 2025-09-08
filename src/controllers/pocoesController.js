@@ -10,4 +10,18 @@ const getAllPocoes = (req, res) => {
     })
 };
 
-export { getAllPocoes };
+const getPocoesById = (req, res) => {
+    const id = parseInt(req.params.id);
+
+    const pocao = pocoes.find (p => p.id === id);
+
+    if(pocao) {
+        res.status(200).json(pocao);
+    } else {
+        res.status(404).json({
+            mensagem: "Poção não encontrada!"
+        });    
+    }
+}
+
+export { getAllPocoes, getPocoesById};
